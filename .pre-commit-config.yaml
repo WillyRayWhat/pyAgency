@@ -27,7 +27,7 @@ repos:
         name: mypy
         stages: [commit]
         language: system
-        entry: mypy
+        entry: mypy src/
         types: [python]
         pass_filenames: false
 
