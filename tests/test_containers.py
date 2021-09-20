@@ -50,6 +50,8 @@ def test_container_name():
     """containers should be able to get a name"""
     container = Container(name="main")
     assert container.name == "main"
+    container = Container(size=10)
+    assert container.size == 10
 
 
 def test_container_nesting():

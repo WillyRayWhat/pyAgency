@@ -40,4 +40,10 @@ repos:
         always_run: true
         types: [ python ]
 
-
+      - id: pytest-cov
+        name: pytest
+        stages: [ commit ]
+        language: system
+        entry: pipenv run pytest --cov --cov-fail-under=100
+        types: [ python ]
+        pass_filenames: false
