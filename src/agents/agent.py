@@ -21,6 +21,6 @@ class Agent(AbstractAgent):
         self.agent_id = Agent.next_id
         Agent.next_id += 1
 
-    def get_name(self):
+    def get_name(self) -> str:
         """name is the agent type + the agent id"""
         return f"Agent {self.agent_id}"

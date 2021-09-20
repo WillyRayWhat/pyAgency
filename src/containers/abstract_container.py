@@ -11,8 +11,8 @@ class AbstractContainer(metaclass=ABCMeta):
     """
 
     @abstractmethod
-    def add_agent(self, agent):
+    def add_agent(self, agent):  # pragma: no cover
         """Add an agent"""
 
-    def remove_agent(self, agent):
+    def remove_agent(self, agent):  # pragma: no cover
         """remove an agent"""
